@@ -1,0 +1,14 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace
+
+# SwiftPM
+/.build/
+/Packages/
+/Package.pins
+
+# CocoaPods
+Pods/
