@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Мы используем Локальный Доступ для поиска устройств рядом</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Мы используем Bluetooth для поиска устройств рядом</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_bonjour._tcp</string>
+		<string>_services._dns-sd._udp</string>
+	</array>
+</dict>
+</plist>
