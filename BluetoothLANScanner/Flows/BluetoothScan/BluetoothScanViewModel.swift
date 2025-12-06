@@ -13,10 +13,14 @@ final class BluetoothScanViewModel: ObservableObject {
     @Published var devices: [Device] = []
     @Published var isScanning = false
     @Published var isLoading = false
+    @Published var progress: Double = 0.0
     @Published var errorMessage: String?
 
     private let scanner: DeviceScanner
     private let history: HistoryRepository
+
+    private var progressTask: Task<Void, Never>?
+    private var stopTask: Task<Void, Never>?
 
     init(scanner: DeviceScanner, history: HistoryRepository) {
         self.scanner = scanner
@@ -32,6 +36,24 @@ final class BluetoothScanViewModel: ObservableObject {
         isLoading = true
         errorMessage = nil
         devices = []
+        progress = 0
+
+        progressTask?.cancel()
+        progressTask = Task { [weak self] in
+            guard let self else { return }
+            while !Task.isCancelled && self.isScanning {
+                let elapsed = Date().timeIntervalSince(startedAt)
+                self.progress = min(max(elapsed / max(duration, 0.1), 0), 1)
+                try? await Task.sleep(nanoseconds: 100_000_000)
+            }
+        }
+
+        stopTask?.cancel()
+        stopTask = Task { [weak self] in
+            guard let self else { return }
+            try? await Task.sleep(nanoseconds: UInt64(duration * 1_000_000_000))
+            self.scanner.stopScanning() 
+        }
 
         Task {
             do {
@@ -44,27 +66,38 @@ final class BluetoothScanViewModel: ObservableObject {
                     finishedAt: finishedAt,
                     devices: scanned
                 )
-
-                do {
-                    try history.saveSession(session)
-                    print("✅ Saved session \(session.id) devices: \(session.devices.count)")
-                } catch {
-                    errorMessage = "Скан выполнен, но не удалось сохранить: \(error.localizedDescription)"
-                }
+                try? history.saveSession(session)
 
                 devices = scanned.sorted { ($0.rssi ?? -100) > ($1.rssi ?? -100) }
+                progress = 1.0
             } catch {
                 errorMessage = error.localizedDescription
             }
 
             isScanning = false
             isLoading = false
+
+            progressTask?.cancel()
+            progressTask = nil
+
+            stopTask?.cancel()
+            stopTask = nil
         }
     }
 
     func stopScan() {
+        guard isScanning else { return }
+
         scanner.stopScanning()
+
         isScanning = false
         isLoading = false
+        progress = 1.0
+
+        progressTask?.cancel()
+        progressTask = nil
+
+        stopTask?.cancel()
+        stopTask = nil
     }
 }

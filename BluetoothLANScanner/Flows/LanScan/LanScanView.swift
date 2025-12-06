@@ -35,7 +35,7 @@ struct LanScanView: View {
                 .ignoresSafeArea()
 
             if viewModel.devices.isEmpty {
-                ScanActionButton(mode: .lan, isScanning: viewModel.isScanning) {
+                ScanActionButton(mode: .lan, isScanning: viewModel.isScanning, progress: viewModel.progress) {
                     viewModel.isScanning ? viewModel.stopScan() : viewModel.startScan(duration: 15)
                 }
             } else {
@@ -49,10 +49,11 @@ struct LanScanView: View {
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)
+                .padding(.top, 120)
 
                 VStack {
                     Spacer()
-                    ScanActionButton(mode: .lan, isScanning: viewModel.isScanning) {
+                    ScanActionButton(mode: .lan, isScanning: viewModel.isScanning, progress: viewModel.progress, size: 50) {
                         viewModel.isScanning ? viewModel.stopScan() : viewModel.startScan(duration: 15)
                     }
                     .padding(.bottom, 86)

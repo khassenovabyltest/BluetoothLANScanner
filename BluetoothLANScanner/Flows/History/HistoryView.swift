@@ -71,8 +71,11 @@ struct HistoryView: View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
                 TextField("Фильтр по имени устройства", text: $viewModel.deviceNameQuery)
-                    .textFieldStyle(.roundedBorder)
+                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 4, style: .continuous))
+                    .foregroundColor(.white)
+                    .tint(.white)
 
+                
                 Button("Найти") { viewModel.load() }
                     .disabled(viewModel.deviceNameQuery.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
             }

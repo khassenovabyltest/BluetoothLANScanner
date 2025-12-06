@@ -24,9 +24,9 @@ struct BluetoothScanView: View {
         ZStack {
             AppBackgroundView()
                 .ignoresSafeArea()
-            
+
             if viewModel.devices.isEmpty {
-                ScanActionButton(mode: .bluetooth, isScanning: viewModel.isScanning) {
+                ScanActionButton(mode: .bluetooth, isScanning: viewModel.isScanning, progress: viewModel.progress) {
                     viewModel.isScanning ? viewModel.stopScan() : viewModel.startScan(duration: 15)
                 }
             } else {
@@ -40,21 +40,20 @@ struct BluetoothScanView: View {
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)
-
+                .padding(.top, 120)
 
                 VStack {
                     Spacer()
-                    ScanActionButton(mode: .bluetooth, isScanning: viewModel.isScanning) {
+                    ScanActionButton(mode: .bluetooth, isScanning: viewModel.isScanning, progress: viewModel.progress, size: 50) {
                         viewModel.isScanning ? viewModel.stopScan() : viewModel.startScan(duration: 15)
                     }
-                    .padding(.bottom, 86) 
+                    .padding(.bottom, 120)
                 }
             }
         }
         .navigationTitle("Bluetooth Сканер")
         .navigationBarTitleDisplayMode(.large)
         .toolbarBackground(.hidden, for: .navigationBar)
-        .toolbarColorScheme(.dark, for: .navigationBar)
         .onDisappear {
             if viewModel.isScanning { viewModel.stopScan() }
         }
