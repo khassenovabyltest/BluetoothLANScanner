@@ -65,5 +65,13 @@ struct BluetoothScanView: View {
         } message: {
             Text(viewModel.errorMessage ?? "")
         }
+        .alert("Готово", isPresented: Binding(
+            get: { viewModel.completionMessage != nil },
+            set: { if !$0 { viewModel.completionMessage = nil } }
+        )) {
+            Button("OK", role: .cancel) { viewModel.completionMessage = nil }
+        } message: {
+            Text(viewModel.completionMessage ?? "")
+        }
     }
 }

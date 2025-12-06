@@ -15,6 +15,7 @@ final class BluetoothScanViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var progress: Double = 0.0
     @Published var errorMessage: String?
+    @Published var completionMessage: String?
 
     private let scanner: DeviceScanner
     private let history: HistoryRepository
@@ -70,6 +71,7 @@ final class BluetoothScanViewModel: ObservableObject {
 
                 devices = scanned.sorted { ($0.rssi ?? -100) > ($1.rssi ?? -100) }
                 progress = 1.0
+                completionMessage = "Сканирование завершено. Найдено устройств: \(devices.count)"
             } catch {
                 errorMessage = error.localizedDescription
             }
