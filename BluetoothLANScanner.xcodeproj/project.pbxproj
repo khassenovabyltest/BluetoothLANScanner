@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC492F6A2EE222AF00E343F1 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492F692EE222AF00E343F1 /* HistoryViewModel.swift */; };
+		EC492F6C2EE222BC00E343F1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492F6B2EE222BC00E343F1 /* HistoryView.swift */; };
+		EC492F6E2EE222F400E343F1 /* SessionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492F6D2EE222F400E343F1 /* SessionDetailViewModel.swift */; };
+		EC492F702EE222FF00E343F1 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492F6F2EE222FF00E343F1 /* SessionDetailView.swift */; };
+		EC492F732EE2F9D400E343F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC492F722EE2F9D400E343F1 /* LaunchScreen.storyboard */; };
+		EC492F752EE2FAF700E343F1 /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492F742EE2FAF700E343F1 /* AppBackgroundView.swift */; };
+		EC4930392EE31D2600E343F1 /* ScanActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4930382EE31D2600E343F1 /* ScanActionButton.swift */; };
 		ECFE53452EE114B6005B4D33 /* BluetoothLANScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE532C2EE114B6005B4D33 /* BluetoothLANScannerApp.swift */; };
 		ECFE53462EE114B6005B4D33 /* BluetoothLANScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECFE533F2EE114B6005B4D33 /* BluetoothLANScanner.xcdatamodeld */; };
 		ECFE53472EE114B6005B4D33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53412EE114B6005B4D33 /* ContentView.swift */; };
@@ -15,9 +22,30 @@
 		ECFE534B2EE11580005B4D33 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE534A2EE11580005B4D33 /* DeviceType.swift */; };
 		ECFE534D2EE11591005B4D33 /* ScanSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE534C2EE11591005B4D33 /* ScanSession.swift */; };
 		ECFE534F2EE115A1005B4D33 /* DeviceScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE534E2EE115A1005B4D33 /* DeviceScanner.swift */; };
+		ECFE53512EE1160B005B4D33 /* HistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53502EE1160B005B4D33 /* HistoryRepository.swift */; };
+		ECFE53532EE117A9005B4D33 /* BluetoothScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53522EE117A9005B4D33 /* BluetoothScannerService.swift */; };
+		ECFE53552EE11EA8005B4D33 /* LanScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53542EE11EA8005B4D33 /* LanScannerService.swift */; };
+		ECFE53582EE11FA1005B4D33 /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = ECFE53572EE11FA1005B4D33 /* LanScanner */; };
+		ECFE535A2EE12048005B4D33 /* BluetoothScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53592EE12048005B4D33 /* BluetoothScanViewModel.swift */; };
+		ECFE535C2EE120BC005B4D33 /* BluetoothScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE535B2EE120BC005B4D33 /* BluetoothScanView.swift */; };
+		ECFE53602EE126AB005B4D33 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE535F2EE126AB005B4D33 /* HomeView.swift */; };
+		ECFE53632EE1272D005B4D33 /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53622EE1272D005B4D33 /* DeviceRowView.swift */; };
+		ECFE53652EE12761005B4D33 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53642EE12761005B4D33 /* DeviceDetailView.swift */; };
+		ECFE53672EE12924005B4D33 /* LanScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53662EE12924005B4D33 /* LanScanViewModel.swift */; };
+		ECFE53692EE12984005B4D33 /* LanScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE53682EE12984005B4D33 /* LanScanView.swift */; };
+		ECFE536B2EE214D4005B4D33 /* CoreDataHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE536A2EE214D4005B4D33 /* CoreDataHistoryRepository.swift */; };
+		ECFE536D2EE214F1005B4D33 /* CoreDataMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE536C2EE214EF005B4D33 /* CoreDataMapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC492F692EE222AF00E343F1 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		EC492F6B2EE222BC00E343F1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		EC492F6D2EE222F400E343F1 /* SessionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailViewModel.swift; sourceTree = "<group>"; };
+		EC492F6F2EE222FF00E343F1 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		EC492F712EE2347100E343F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC492F722EE2F9D400E343F1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC492F742EE2FAF700E343F1 /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
+		EC4930382EE31D2600E343F1 /* ScanActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanActionButton.swift; sourceTree = "<group>"; };
 		ECFE53022EE10B53005B4D33 /* BluetoothLANScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothLANScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFE532C2EE114B6005B4D33 /* BluetoothLANScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothLANScannerApp.swift; sourceTree = "<group>"; };
 		ECFE53312EE114B6005B4D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +55,18 @@
 		ECFE534A2EE11580005B4D33 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		ECFE534C2EE11591005B4D33 /* ScanSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSession.swift; sourceTree = "<group>"; };
 		ECFE534E2EE115A1005B4D33 /* DeviceScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceScanner.swift; sourceTree = "<group>"; };
+		ECFE53502EE1160B005B4D33 /* HistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRepository.swift; sourceTree = "<group>"; };
+		ECFE53522EE117A9005B4D33 /* BluetoothScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScannerService.swift; sourceTree = "<group>"; };
+		ECFE53542EE11EA8005B4D33 /* LanScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScannerService.swift; sourceTree = "<group>"; };
+		ECFE53592EE12048005B4D33 /* BluetoothScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScanViewModel.swift; sourceTree = "<group>"; };
+		ECFE535B2EE120BC005B4D33 /* BluetoothScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScanView.swift; sourceTree = "<group>"; };
+		ECFE535F2EE126AB005B4D33 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ECFE53622EE1272D005B4D33 /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
+		ECFE53642EE12761005B4D33 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		ECFE53662EE12924005B4D33 /* LanScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScanViewModel.swift; sourceTree = "<group>"; };
+		ECFE53682EE12984005B4D33 /* LanScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScanView.swift; sourceTree = "<group>"; };
+		ECFE536A2EE214D4005B4D33 /* CoreDataHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHistoryRepository.swift; sourceTree = "<group>"; };
+		ECFE536C2EE214EF005B4D33 /* CoreDataMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMapping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFE53582EE11FA1005B4D33 /* LanScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +131,7 @@
 			children = (
 				ECFE53302EE114B6005B4D33 /* Lottie */,
 				ECFE53312EE114B6005B4D33 /* Assets.xcassets */,
+				EC492F722EE2F9D400E343F1 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -97,6 +139,7 @@
 		ECFE53332EE114B6005B4D33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE53612EE1271F005B4D33 /* Views */,
 				ECFE532E2EE114B6005B4D33 /* Extensions */,
 				ECFE532F2EE114B6005B4D33 /* Helpers */,
 				ECFE53322EE114B6005B4D33 /* Resources */,
@@ -116,6 +159,7 @@
 		ECFE53352EE114B6005B4D33 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE53502EE1160B005B4D33 /* HistoryRepository.swift */,
 				ECFE534E2EE115A1005B4D33 /* DeviceScanner.swift */,
 			);
 			path = Protocols;
@@ -133,6 +177,8 @@
 		ECFE53372EE114B6005B4D33 /* BluetoothScan */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE535B2EE120BC005B4D33 /* BluetoothScanView.swift */,
+				ECFE53592EE12048005B4D33 /* BluetoothScanViewModel.swift */,
 			);
 			path = BluetoothScan;
 			sourceTree = "<group>";
@@ -140,6 +186,10 @@
 		ECFE53382EE114B6005B4D33 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				EC492F6F2EE222FF00E343F1 /* SessionDetailView.swift */,
+				EC492F6D2EE222F400E343F1 /* SessionDetailViewModel.swift */,
+				EC492F6B2EE222BC00E343F1 /* HistoryView.swift */,
+				EC492F692EE222AF00E343F1 /* HistoryViewModel.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -147,6 +197,7 @@
 		ECFE53392EE114B6005B4D33 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE535F2EE126AB005B4D33 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -154,6 +205,8 @@
 		ECFE533A2EE114B6005B4D33 /* LanScan */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE53682EE12984005B4D33 /* LanScanView.swift */,
+				ECFE53662EE12924005B4D33 /* LanScanViewModel.swift */,
 			);
 			path = LanScan;
 			sourceTree = "<group>";
@@ -161,10 +214,10 @@
 		ECFE533B2EE114B6005B4D33 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				ECFE53372EE114B6005B4D33 /* BluetoothScan */,
-				ECFE53382EE114B6005B4D33 /* History */,
 				ECFE53392EE114B6005B4D33 /* Home */,
+				ECFE53372EE114B6005B4D33 /* BluetoothScan */,
 				ECFE533A2EE114B6005B4D33 /* LanScan */,
+				ECFE53382EE114B6005B4D33 /* History */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -172,6 +225,7 @@
 		ECFE533C2EE114B6005B4D33 /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE53522EE117A9005B4D33 /* BluetoothScannerService.swift */,
 			);
 			path = Bluetooth;
 			sourceTree = "<group>";
@@ -179,6 +233,7 @@
 		ECFE533D2EE114B6005B4D33 /* LAN */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE53542EE11EA8005B4D33 /* LanScannerService.swift */,
 			);
 			path = LAN;
 			sourceTree = "<group>";
@@ -186,6 +241,9 @@
 		ECFE533E2EE114B6005B4D33 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				ECFE536C2EE214EF005B4D33 /* CoreDataMapping.swift */,
+				ECFE536A2EE214D4005B4D33 /* CoreDataHistoryRepository.swift */,
+				ECFE53422EE114B6005B4D33 /* Persistence.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -196,7 +254,6 @@
 				ECFE533C2EE114B6005B4D33 /* Bluetooth */,
 				ECFE533D2EE114B6005B4D33 /* LAN */,
 				ECFE533E2EE114B6005B4D33 /* Persistence */,
-				ECFE533F2EE114B6005B4D33 /* BluetoothLANScanner.xcdatamodeld */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -209,10 +266,22 @@
 				ECFE533B2EE114B6005B4D33 /* Flows */,
 				ECFE53402EE114B6005B4D33 /* Services */,
 				ECFE53332EE114B6005B4D33 /* Common */,
+				ECFE533F2EE114B6005B4D33 /* BluetoothLANScanner.xcdatamodeld */,
+				EC492F712EE2347100E343F1 /* Info.plist */,
 				ECFE53412EE114B6005B4D33 /* ContentView.swift */,
-				ECFE53422EE114B6005B4D33 /* Persistence.swift */,
 			);
 			path = BluetoothLANScanner;
+			sourceTree = "<group>";
+		};
+		ECFE53612EE1271F005B4D33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC4930382EE31D2600E343F1 /* ScanActionButton.swift */,
+				EC492F742EE2FAF700E343F1 /* AppBackgroundView.swift */,
+				ECFE53642EE12761005B4D33 /* DeviceDetailView.swift */,
+				ECFE53622EE1272D005B4D33 /* DeviceRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +301,7 @@
 			);
 			name = BluetoothLANScanner;
 			packageProductDependencies = (
+				ECFE53572EE11FA1005B4D33 /* LanScanner */,
 			);
 			productName = BluetoothLANScanner;
 			productReference = ECFE53022EE10B53005B4D33 /* BluetoothLANScanner.app */;
@@ -261,6 +331,9 @@
 			);
 			mainGroup = ECFE52F92EE10B53005B4D33;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ECFE53562EE11FA1005B4D33 /* XCRemoteSwiftPackageReference "lan-scanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ECFE53032EE10B53005B4D33 /* Products */;
 			projectDirPath = "";
@@ -276,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC492F732EE2F9D400E343F1 /* LaunchScreen.storyboard in Resources */,
 				ECFE53492EE114B6005B4D33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +363,29 @@
 			files = (
 				ECFE53452EE114B6005B4D33 /* BluetoothLANScannerApp.swift in Sources */,
 				ECFE53462EE114B6005B4D33 /* BluetoothLANScanner.xcdatamodeld in Sources */,
+				ECFE53602EE126AB005B4D33 /* HomeView.swift in Sources */,
+				ECFE53632EE1272D005B4D33 /* DeviceRowView.swift in Sources */,
 				ECFE534F2EE115A1005B4D33 /* DeviceScanner.swift in Sources */,
+				ECFE53532EE117A9005B4D33 /* BluetoothScannerService.swift in Sources */,
+				ECFE53652EE12761005B4D33 /* DeviceDetailView.swift in Sources */,
+				EC492F6C2EE222BC00E343F1 /* HistoryView.swift in Sources */,
+				ECFE536D2EE214F1005B4D33 /* CoreDataMapping.swift in Sources */,
+				ECFE53692EE12984005B4D33 /* LanScanView.swift in Sources */,
+				ECFE535C2EE120BC005B4D33 /* BluetoothScanView.swift in Sources */,
+				ECFE536B2EE214D4005B4D33 /* CoreDataHistoryRepository.swift in Sources */,
+				ECFE53552EE11EA8005B4D33 /* LanScannerService.swift in Sources */,
 				ECFE53472EE114B6005B4D33 /* ContentView.swift in Sources */,
+				EC492F702EE222FF00E343F1 /* SessionDetailView.swift in Sources */,
+				ECFE53512EE1160B005B4D33 /* HistoryRepository.swift in Sources */,
 				ECFE53482EE114B6005B4D33 /* Persistence.swift in Sources */,
+				EC492F6E2EE222F400E343F1 /* SessionDetailViewModel.swift in Sources */,
+				EC492F6A2EE222AF00E343F1 /* HistoryViewModel.swift in Sources */,
 				ECFE534B2EE11580005B4D33 /* DeviceType.swift in Sources */,
+				ECFE53672EE12924005B4D33 /* LanScanViewModel.swift in Sources */,
+				EC4930392EE31D2600E343F1 /* ScanActionButton.swift in Sources */,
 				ECFE534D2EE11591005B4D33 /* ScanSession.swift in Sources */,
+				EC492F752EE2FAF700E343F1 /* AppBackgroundView.swift in Sources */,
+				ECFE535A2EE12048005B4D33 /* BluetoothScanViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +523,9 @@
 				DEVELOPMENT_TEAM = PUJ5AQT6UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BluetoothLANScanner/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Мы используем Bluetooth для поиска устройств рядом";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "\"\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +554,9 @@
 				DEVELOPMENT_TEAM = PUJ5AQT6UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BluetoothLANScanner/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Мы используем Bluetooth для поиска устройств рядом";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "\"\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECFE53562EE11FA1005B4D33 /* XCRemoteSwiftPackageReference "lan-scanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaatheusGois/lan-scanner";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECFE53572EE11FA1005B4D33 /* LanScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECFE53562EE11FA1005B4D33 /* XCRemoteSwiftPackageReference "lan-scanner" */;
+			productName = LanScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ECFE533F2EE114B6005B4D33 /* BluetoothLANScanner.xcdatamodeld */ = {
